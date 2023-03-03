@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+.body{
+    background-color: rgb(235, 235, 235);
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-family: monospace;
+    color: rgb(167, 130, 82);
+}
+
+.container{
+    margin: 0 auto;
+    width: 840px;
+    height: auto;
+    padding: 30px;
+    margin-top: 60px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+form{
+    padding: 50px;
+    background-color: beige;
+}
+
+#title, #para{
+    width: 700px;
+    margin-bottom: 30px;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: rgb(248, 248, 248);
+    text-align: left;
+    font-size: 18px;
+}
+
+#title:focus, #para:focus{
+    background-color: white;
+}
+
+#title{
+    height: 35px;
+}
+
+#para{
+    height: 350px;
+ 
+}
+
+#submit{
+    font-weight: 700;
+    width: 120px;
+    height: 40px;
+    background-color:  rgb(167, 130, 82);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}
+
+#submit:hover{
+    background-color:  rgb(235, 196, 144);
+
+}
+
+table, th, td {
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+table{
+    width: 840px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+th{
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    background-color: beige;
+    padding: 10px;
+}
+
+td{
+    font-size: 16px;
+    padding-top: 15px;
+    border: 1px solid rgb(194, 194, 194);
+    padding: 10px;
+    height: auto;
+    max-width: 850px;
+}
+
+td:nth-child(3), td:nth-child(4){
+    text-align: center;
+    border: none;
+    padding: 0;
+}
+
+td:nth-child(3){
+    color: rgb(31, 170, 31);
+}
+
+td:nth-child(4){
+    color: rgb(213, 14, 14);
+}

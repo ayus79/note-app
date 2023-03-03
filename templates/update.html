@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h3>Update Notes</h3>
+        {% for rec in data %}
+        <form action="/update/{{rec.id}}" method="post">
+            {% csrf_token %}
+            <input id="title" value="{{rec.title}}" name="title" placeholder="Title" type="text" required><br/>
+            <textarea id="para" name="para"  placeholder="Description" required >{{rec.para}}</textarea><br/>
+            <input id="submit" type="submit" value="Save">
+        </form>
+        {% endfor %}
+    </div>
+</body>
+</html>
